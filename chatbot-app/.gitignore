@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.db
+*.sqlite
+checkpoints.db
+chatbot.db
+
+# Frontend
+node_modules/
+dist/
+.npm
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
