@@ -16,25 +16,17 @@ A state-of-the-art, production-ready AI Chatbot application powered by **LangGra
 
 ---
 
-## 🌟 Key Features
 
-- 🧠 **True Conversational Memory**:
-  - Built with LangGraph's reducer architecture: `messages: Annotated[List[BaseMessage], add_messages]`.
-  - Thread-level persistence via `MemorySaver` and `SqliteSaver` checkpointers ensuring cross-turn memory retention (e.g., remembering user details across sessions).
-- ⚡ **Real-Time Token Streaming**:
-  - Low-latency Server-Sent Events (SSE) streaming directly from LLMs via `astream`.
-  - Abortable stream generation with live "Stop" controls.
-- 💡 **Deep Reasoning & `<think>` Extraction**:
-  - Automatically isolates `<think>...</think>` tags from reasoning models into expandable thinking blocks with token counts.
-- 🚀 **Dual Provider Model Engine**:
-  - **Groq LPU**: Ultra-fast inference with `Qwen 3.8 27B`, `GPT-OSS 120B`, and `GPT-OSS 20B`.
-  - **OpenAI**: Flagship multimodal intelligence with `GPT-4o` and `GPT-4o Mini`.
-- 🎨 **Modern, Sleek Interfaces**:
-  - **Option 1 (Standalone Web UI)**: Integrated Vanilla JS + CSS3 frontend served directly by FastAPI at `http://localhost:8000`.
-  - **Option 2 (Full-Stack React App)**: React 18 + TypeScript + TailwindCSS + Vite interface in `chatbot-app/` with sidebar history, theme switcher (Dark/Light), code syntax highlighting, copy buttons, and speech input.
-- 🔒 **Enterprise-Ready**:
-  - Sliding window IP rate limiting, input length validation, graceful retry logic, and zero frontend API key leakage.
+## Key Features
 
+- **Conversational Memory:** Uses LangGraph and checkpointing to retain conversation history across turns and sessions.
+- **Real-Time Streaming:** Streams responses using FastAPI and Server-Sent Events (SSE), with support for stopping generation.
+- **Thinking Process Display:** Extracts `<think>` tags from supported models and displays them in expandable sections.
+- **Multiple LLM Providers:** Supports Groq models, including Qwen and GPT-OSS, along with OpenAI models such as GPT-4o and GPT-4o Mini.
+- **Two Frontend Options:**
+  - A lightweight web interface built with HTML, CSS, and JavaScript.
+  - A React and TypeScript application with chat history, dark/light mode, code highlighting, copy buttons, and speech input.
+- **Basic Security:** Includes IP-based rate limiting, input validation, error handling, and keeps API keys on the backend.
 ---
 
 ## 🏗️ Architecture
