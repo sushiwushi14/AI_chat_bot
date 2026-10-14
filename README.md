@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/OpenAI-GPT--4o-412991.svg" alt="OpenAI">
 </p>
 
-A state-of-the-art, production-ready AI Chatbot application powered by **LangGraph**, **FastAPI**, and **React 18 / Vanilla Web UI**. Features multi-turn conversational memory, real-time Server-Sent Events (SSE) token streaming, reasoning `<think>` tag extraction, SQLite persistence, and multi-model support across Groq and OpenAI.
+An AI chatbot built using **LangGraph, FastAPI, and React 18**, with an optional Vanilla JavaScript web interface. It supports conversation history, real-time response streaming, SQLite-based persistence, and multiple models from Groq and OpenAI. It also includes support for displaying `<think>` tags from compatible reasoning models.
 
 ---
 
