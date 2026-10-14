@@ -235,12 +235,6 @@ Run frontend test suites:
 npm test
 ```
 
----
-
-## 🛡️ Security & Privacy Note
-
-- **Never commit `.env` files**: All `.env` and `*.db` files are strictly excluded via `.gitignore`.
-- API keys are handled strictly on the backend and are never sent to the browser client.
 
 ---
 
